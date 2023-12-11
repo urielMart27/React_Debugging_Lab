@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { generateBookData } from "./data/bookData";
 import BookTable from "./components/BookTable/BookTable";
 import BookRow from "./components/BookRow/BookRow";
+import NewBookForm from "./components/NewBookForm/NewBookForm";
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <div>
       <h1>Book Depot</h1>
+      <NewBookForm />
       <BookTable books={books} />
     </div>
   );
