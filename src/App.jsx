@@ -8,7 +8,7 @@ import { generateBookData } from "./data/bookData";
 import BookTable from "./components/BookTable/BookTable";
 
 const App = () => {
-  const [books, setBooks] = useState();
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
     setBooks(generateBookData()); // **DO NOT EDIT THIS LINE!**

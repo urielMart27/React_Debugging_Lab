@@ -5,7 +5,7 @@ import "./BookTable.css";
 // stored in the App component's state.
 // How can you give BookTable access to that books array?
 
-const BookTable = () => {
+const BookTable = ({ books = [] }) => {
   const bookItems = books.map((book) => <div>{book}</div>);
 
   return (
