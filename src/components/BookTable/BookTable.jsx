@@ -8,7 +8,7 @@ import BookRow from "../BookRow/BookRow";
 
 const BookTable = ({ books = [] }) => {
   const bookItems = books.map((book, index) => (
-    <BookRow key={index} title={book.title} />
+    <BookRow key={index} book={book} />
   ));
 
   return (
